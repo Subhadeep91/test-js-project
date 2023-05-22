@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  body
+    form(action='/register', method='POST')
+      p
+        | What is your name?
+        input(type='text', name='username', value='')
+      p
+        | What do you want for christmas?
+        input(type='text', name='gift', value='')
+      input(type='submit', value='Submit')
